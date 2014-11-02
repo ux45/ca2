@@ -1,0 +1,73 @@
+/*site header and nav */
+.navbar-inverse .navbar-brand{
+  color: #333;
+  margin: 33px 0 0 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+.navbar-inverse .navbar-brand:hover, 
+.navbar-inverse .navbar-brand:focus {
+  color: #006687;
+}
+
+.chosen-container{
+  font-size: 15px;
+}
+.chosen-container-single .chosen-single {
+  height: auto;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: none;
+  background-clip: padding-box;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: normal;
+}
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: none;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  background-image: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.chosen-container-multi .chosen-choices {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto !important;
+  border: none;
+  background-color: #fff;
+  background-image: none;
+}
+.chosen-container-active .chosen-choices {
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#edit_field_timespan_tid_chosen{
+  padding: 0;
+}
+#edit-field-tags-tid-wrapper{
+  max-width: 300px;
+}
+#edit-title-wrapper .views-operator{
+  float: left;
+  margin-right: 8px;
+}
+#edit-title-wrapper .views-widget{
+  float: left;
+}
+#edit-title-wrapper label{
+  width: 100%;
+}

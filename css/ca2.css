@@ -78,14 +78,14 @@
 
 /* home page search panel */
 #block-views-exp-geosearchaddy-page{
-  width: 500px;
+  width: 575px;
   position: absolute;
   top: 67px;
   z-index: 1000;
   background: #fff;
   opacity: .95;
   padding: 20px;
-  left: 15%;
+  left: 14%;
 }
 #block-views-exp-geosearchaddy-page h2.block-title,
 #block-views-blog-and-articles-block h2.block-title,
@@ -96,10 +96,19 @@
 .form-item-field-geofield-distance-distance{
   float: right;
   position: absolute;
-  right: 100px;
+  right: 83px;
+}
+.form-item-field-geofield-distance-distance::before{
+  content: "Search radius:";
+  position: absolute;
+  right: 38px;
+  width: 85px;
+  font-size: 13px;
+  margin-top: 10px;
 }
 #edit-field-geofield-distance-distance{
-  width: 50px;
+  width: 32px;
+  text-align:right;
 }
 .form-item-field-geofield-distance-unit{
   position: absolute;
@@ -110,7 +119,7 @@
 .form-item-field-geofield-distance-origin{
   position: absolute;
   float: left;
-  width: 300px;
+  width: 315px;
 }
 #views-exposed-form-geosearchaddy-page .description{
   margin-top: 10px;
@@ -138,23 +147,23 @@
   z-index: 1001;
   background: #fff;
   opacity: 0.93;
-  width: 500px;
+  width: 425px;
   top: 67px;
-  left: 17%;
+  left: 16%;
   padding: 20px;
-  margin-left: 520px;
+  margin-left: 595px;
 }
 
 /* home page browse panel */
 #block-views-term-browser-block-1{
-  width: 500px;
+  width: 575px;
   position: absolute;
   top: 320px;
   z-index: 1000;
   background: #fff;
   opacity: .95;
   padding: 20px;
-  left: 15%;
+  left: 14%;
 }
 #block-views-term-browser-block-1 h3 {
   font-size: 18px;

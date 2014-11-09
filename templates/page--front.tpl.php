@@ -38,7 +38,7 @@
   </div>
 </header>
 <div class="main-container container-fluid">
-  <div class="row">
+  <div class="row" id="top-row">
     <header role="banner" id="page-header">
       <?php if (!empty($site_slogan)): ?>
         <p class="lead"><?php print $site_slogan; ?></p>

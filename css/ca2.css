@@ -229,3 +229,16 @@
   margin-top: 50px;
   padding: 30px 0;
 }
+
+/* browse */
+.view-id-points_base_1 #edit-field-timespan-tid{
+  height: 39px;
+  width:200px;
+}
+.view-id-points_base_1 #edit-field-timespan-tid:active,
+.view-id-points_base_1 #edit-field-timespan-tid:hover{
+  width:200px;
+  height:200px;
+  position: absolute;
+  z-index:200;
+}

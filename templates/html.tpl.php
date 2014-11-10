@@ -53,6 +53,7 @@
   <title><?php print $head_title; ?></title>
   <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/yeti/bootstrap.min.css" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="/sites/all/libraries/tablesorter/css/theme.bootstrap.css" media="all" />
   <?php print $styles; ?>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
@@ -60,6 +61,8 @@
   <![endif]-->
   <?php print $scripts; ?>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
@@ -68,5 +71,6 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  <script type="text/javascript" src="/sites/all/themes/ca2/js/ca2.js"></script>
 </body>
 </html>

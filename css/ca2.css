@@ -5,6 +5,10 @@
   background: #f2f2f1;
   padding-bottom: 20px;
 }
+#navbar .lead{
+  font-size: 17px;
+  padding-left: 5px;
+}
 #main-content-wrapper{
   margin-top: 0;
   padding: 0;
@@ -12,8 +16,9 @@
 .navbar-inverse .navbar-brand{
   color: #333;
   margin: 33px 0 0 0;
-  font-weight: bold;
-  font-size: 25px;
+  font-weight: normal;
+  font-size: 35px;
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 .navbar-inverse .navbar-brand:hover, 
 .navbar-inverse .navbar-brand:focus {

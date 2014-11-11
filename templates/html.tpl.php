@@ -55,6 +55,7 @@
   <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" />
   <link type="text/css" rel="stylesheet" href="/sites/all/libraries/tablesorter/css/theme.bootstrap.css" media="all" />
   <?php print $styles; ?>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Source+Sans+Pro:300|Puritan|Dosis:300,400|Lato:300,400|News+Cycle:400,700|Quicksand|Magra|Raleway|Roboto:300|Roboto+Condensed:400,300|Oxygen:300|Hind:400,300' rel='stylesheet' type='text/css'>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -18,7 +18,7 @@
   margin: 33px 0 0 0;
   font-weight: normal;
   font-size: 35px;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 .navbar-inverse .navbar-brand:hover, 
 .navbar-inverse .navbar-brand:focus {
@@ -87,6 +87,17 @@
   width: 100%;
 }
 
+/* home page */
+.front .main-container,
+.front .main-container .container-fluid,
+.front .main-container .row,
+.front .main-container .col-sm-12{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* home page search panel */
 #block-views-exp-geosearchaddy-page{
   width: 575px;
@@ -128,8 +139,9 @@
   white-space: nowrap;
 }
 #edit-field-geofield-distance-distance{
-  width: 32px;
+  width: 40px;
   text-align:right;
+  padding: 8px 3px;
 }
 .form-item-field-geofield-distance-unit{
   position: absolute;
@@ -222,10 +234,6 @@
   min-height: 550px;
   padding-left: 0;
   padding-right: 0;
-}
-#top-row{
-  margin-left: -10px;
-  margin-right: -10px;
 }
 
 /* footer */

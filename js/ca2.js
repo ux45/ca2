@@ -3,6 +3,14 @@ jQuery(document).ready(function()
     jQuery(".view-id-showpointsbyterm .views-table").addClass("tablesorter");
     jQuery(".view-id-showpointsbyterm .views-table").tablesorter( {sortList: [[0,0], [1,0]]} ); 
     jQuery(".view-id-points_base_1 .views-table").tablesorter( {sortList: [[0,0], [1,0]]} ); 
+    jQuery("a.menu-218").wrapInner("<span></span>").prepend("<i class='fa fa-home'></i> ");
+    jQuery("a.menu-776").wrapInner("<span></span>").prepend("<i class='fa fa-info-circle'></i> ");
+    jQuery("a.menu-616").wrapInner("<span></span>").prepend("<i class='fa fa-file-text-o'></i> ");
+    jQuery("a.menu-592").wrapInner("<span></span>").prepend("<i class='fa fa-list-ul'></i> ");
+    jQuery("a.menu-777").wrapInner("<span></span>").prepend("<i class='fa fa-wrench'></i> ");
+    jQuery("#block-views-term-browser-block-1 .view-header").click(function() {
+      jQuery("#block-views-term-browser-block-1").toggle();
+    });
   } 
 ); 
 jQuery(function() {

@@ -64,6 +64,7 @@
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.min.js"></script>
   <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
+  <script type="text/javascript" src="/sites/all/themes/ca2/js/ca2.js"></script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
@@ -72,6 +73,5 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <script type="text/javascript" src="/sites/all/themes/ca2/js/ca2.js"></script>
 </body>
 </html>

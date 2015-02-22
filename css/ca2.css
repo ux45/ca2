@@ -4,6 +4,8 @@ a:hover, a:focus {
 }
 /*site header and nav */
 #navbar {
+  margin-top: 0;
+  margin-bottom: 0;
   position: relative;
   z-index: 100;
   background: #f2f2f1;
@@ -12,6 +14,65 @@ a:hover, a:focus {
 #navbar .lead{
   font-size: 17px;
   padding-left: 5px;
+}
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+}
+#navbar .menu{
+  float: right;
+}
+.navbar .logo{
+  margin-top: 20px;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #006687;
+  font-size: 17px;
+  margin-top: 24px;
+  padding-top: 20px;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+  background-color: #49B2D4;
+}
+ul.nice-menu-down {
+  background: transparent;
+  width: 100%;
+}
+ul.nice-menu li, ul.nice-menu li.menuparent {
+  border: none;
+  background: none !important;
+  background-color: transparent !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  letter-spacing: normal;
+  font-size: 15px;
+  color: #036;
+  float: left;
+}
+ul.nice-menu a {
+color: #036;
+}
+ul.nice-menu li.menuparent ul{
+  background: #f9f9f9;
+  border-top: none;
+  padding: 10px;
+}
+ul.nice-menu-down .menuparent a {
+  font-size: 15px;
+  text-align: left;
+}
+.front .menu-path-front{
+  display: none;
+}
+.front .tabs{
+  display: none;
+}
+.mission-statement h3{
+  color: #FD1A2C;
+  font-weight: bold;
+  font-size: 17px;
+}
+#content p, #content li {
+  font-size: 14px;
 }
 #main-content-wrapper{
   margin-top: 0;
@@ -104,14 +165,13 @@ a:hover, a:focus {
 
 /* home page search panel */
 #block-views-exp-geosearchaddy-page{
-  width: 575px;
-  position: absolute;
-  top: 67px;
+  width: 580px;
   z-index: 900;
   background: #2A323A;
   opacity: .95;
-  padding: 20px;
-  left: 14%;
+  padding: 12px;
+  position: relative;
+  margin-left: 14%;
   color:#eee;
   -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
   box-shadow: 0 0 7px rgba(0,0,0,0.3);
@@ -121,13 +181,12 @@ a:hover, a:focus {
 #block-views-exp-geosearchaddy-page h2.block-title,
 #block-views-blog-and-articles-block h2.block-title,
 #block-views-term-browser-block-1 h2.block-title{
-  font-size: 22px;
-  margin-top: 14px;
+  font-size: 17px;
+  margin: 0;
 }
 .form-item-field-geofield-distance-distance{
-  float: right;
   position: absolute;
-  right: 83px;
+  right: 183px;
 }
 #edit-field-geofield-distance-unit{
   padding: 8px 0px 8px 5px;
@@ -148,7 +207,7 @@ a:hover, a:focus {
 }
 .form-item-field-geofield-distance-unit{
   position: absolute;
-  right: 5px;
+  right: 105px;
   width: 70px;
   padding-top: 0 !important;
 }
@@ -162,15 +221,12 @@ a:hover, a:focus {
 }
 #views-exposed-form-geosearchaddy-page .description{
   margin-top: 17px;
-  margin-right: 100px;
   font-size: 13px;
 }
 #views-exposed-form-geosearchaddy-page .views-exposed-widget.views-submit-button{
   float: right;
-  margin-top: -20px;
+  margin-top: 8px;
   padding: 0;
-  width: 100%;
-  margin-right: -5px;
 }
 #edit-submit-geosearchaddy{
   padding: 7px 14px;
@@ -188,7 +244,7 @@ a:hover, a:focus {
   background: #f5f5f5;
   opacity: 0.96;
   width: 425px;
-  top: 67px;
+  top: 167px;
   left: 16%;
   padding: 20px;
   margin-left: 595px;
@@ -267,6 +323,11 @@ a:hover, a:focus {
   z-index:200;
 }
 
+/* Login page */
+.not-logged-in.page-user .tabs--primary, 
+#user-login{
+  max-width: 500px;
+}
 
 /* responsive */
 
@@ -371,7 +432,16 @@ a:hover, a:focus {
     right: -305px;
   }
 }
-
+@media (max-width: 870px) {
+  .navbar-inverse .navbar-brand{
+    margin-top: 10px;
+  }
+  .navbar-inverse .navbar-nav>li>a {
+    color: #006687;
+    font-size: 14px;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
 @media (max-width: 768px) {
   .navbar-inverse .navbar-toggle{
     background-color: #008cba;

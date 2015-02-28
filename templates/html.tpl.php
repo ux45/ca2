@@ -51,25 +51,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/yeti/bootstrap.min.css" rel="stylesheet">
+  <?php print $styles; ?>
   <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="/sites/all/libraries/tablesorter/css/theme.bootstrap.css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Dosis:300,400|Lato:300,400|Quicksand|Raleway|Roboto:300|Roboto+Condensed:400,300|Oxygen:300' rel='stylesheet' type='text/css'>
   <style type="text/css">
     @import url(http://weloveiconfonts.com/api/?family=entypo);
-
     /* entypo */
     [class*="entypo-"]:before {
       font-family: 'entypo', sans-serif;
     }
   </style>
-  <link type="text/css" rel="stylesheet" href="/sites/all/libraries/tablesorter/css/theme.bootstrap.css" media="all" />
-  <?php print $styles; ?>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Dosis:300,400|Lato:300,400|Quicksand|Raleway|Roboto:300|Roboto+Condensed:400,300|Oxygen:300' rel='stylesheet' type='text/css'>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
-  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.min.js"></script>
   <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
   <script type="text/javascript" src="/sites/all/themes/ca2/js/ca2.js"></script>

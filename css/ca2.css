@@ -34,6 +34,10 @@ a:hover, a:focus {
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
   background-color: #49B2D4;
 }
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+  border-top-color: #006687;
+  border-bottom-color: #006687;
+}
 .navbar-nav i,
 .toggle{
   font-style: normal;
@@ -67,7 +71,10 @@ a:hover, a:focus {
 .navbar-inverse .navbar-brand:focus {
   color: #006687;
 }
-
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+  border-top-color: #006687;
+  border-bottom-color: #006687;
+}
 .chosen-container{
   font-size: 15px;
 }

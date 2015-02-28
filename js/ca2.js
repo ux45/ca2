@@ -3,16 +3,27 @@ jQuery(document).ready(function()
     jQuery(".view-id-showpointsbyterm .views-table").addClass("tablesorter");
     jQuery(".view-id-showpointsbyterm .views-table").tablesorter( {sortList: [[0,0], [1,0]]} ); 
     jQuery(".view-id-points_base_1 .views-table").tablesorter( {sortList: [[0,0], [1,0]]} ); 
-    jQuery("a.menu-218").wrapInner("<span></span>").prepend("<i class='fa fa-home'></i> ");
-    jQuery("a.menu-776").wrapInner("<span></span>").prepend("<i class='fa fa-info-circle'></i> ");
-    jQuery("a.menu-616").wrapInner("<span></span>").prepend("<i class='fa fa-file-text-o'></i> ");
-    jQuery("a.menu-592").wrapInner("<span></span>").prepend("<i class='fa fa-list-ul'></i> ");
-    jQuery("a.menu-777").wrapInner("<span></span>").prepend("<i class='fa fa-wrench'></i> ");
-    jQuery("#block-views-term-browser-block-1 .view-header").click(function() {
-      jQuery("#block-views-term-browser-block-1").toggle();
+    jQuery("a.menu-218").wrapInner("<span></span>").prepend("<i class='entypo-home'></i> ");
+    jQuery("a.menu-776").wrapInner("<span></span>").prepend("<i class='entypo-info-circled' data-text='info-circled'></i> ");
+    jQuery("a.menu-616").wrapInner("<span></span>").prepend(" <i class='entypo-doc-text' data-text='doc-text'></i> ");
+    jQuery("a.menu-592").wrapInner("<span></span>").prepend(" <i class='entypo-flashlight' data-text='flashlight'></i> ");
+    jQuery("a.menu-777").wrapInner("<span></span>").prepend(" <i class='entypo-book' data-text='book'></i> ");
+     jQuery("#block-views-term-browser-block-1 .block-title").wrapInner("<span></span>").append(" <i class='toggle entypo-down-open'></i>");
+     jQuery("#block-views-term-browser-block-1 .block-title").click(function(){
+       jQuery("#block-views-term-browser-block-1 .block-title .toggle").toggleClass("entypo-down-open");
+       jQuery("#block-views-term-browser-block-1 .block-title .toggle").toggleClass("entypo-up-open");
+       jQuery("#block-views-term-browser-block-1 .view-id-term_browser").toggle();
+    });
+    jQuery('.form-item-field-geofield-distance-origin.form-group').addClass("input-group");
+    jQuery('.form-item-field-geofield-distance-origin.form-group').append("<div class='input-group-addon'>, Chicago IL</div>");
+    jQuery("#views-exposed-form-geosearchaddy-page").submit(function( event ) {
+      var addressQuery = jQuery('#edit-field-geofield-distance-origin').val();
+      jQuery('#edit-field-geofield-distance-origin').val(addressQuery + ", Chicago IL");
+      jQuery('.form-item-field-geofield-distance-origin .input-group-addon').empty();
     });
   } 
 ); 
+
 jQuery(function() {
 
   // NOTE: $.tablesorter.theme.bootstrap is ALREADY INCLUDED in the jquery.tablesorter.widgets.js

@@ -43,8 +43,7 @@
  *
  * @ingroup themeable
  */
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces;?>>
 <head profile="<?php print $grddl_profile; ?>">
   <meta charset="utf-8">
@@ -53,7 +52,6 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="all" />
-  <link type="text/css" rel="stylesheet" href="/sites/all/libraries/tablesorter/css/theme.bootstrap.css" media="all" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Dosis:300,400|Lato:300,400|Quicksand|Raleway|Roboto:300|Roboto+Condensed:400,300|Oxygen:300' rel='stylesheet' type='text/css'>
   <style type="text/css">
     @import url(http://weloveiconfonts.com/api/?family=entypo);
@@ -67,8 +65,6 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
-  <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.min.js"></script>
-  <script type="text/javascript" src="/sites/all/libraries/tablesorter/js/jquery.tablesorter.widgets.min.js"></script>
   <script type="text/javascript" src="/sites/all/themes/ca2/js/ca2.js"></script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

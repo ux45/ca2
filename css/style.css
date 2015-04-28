@@ -1,19 +1,24 @@
 /* sitewide styles */
+body{
+  background-color: #fefefe;
+}
 a:hover, a:focus {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 /*site header and nav */
 #navbar {
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
-  z-index: 100;
-  background: #f2f2f1;
-  padding-bottom: 20px;
+  z-index: 1000;
+  background: #F1F5F7;
+  padding-bottom: 13px;
+  color: #36322d;
 }
 #navbar .lead{
   font-size: 17px;
   padding-left: 5px;
+  font-style: italic;
 }
 .navbar-inverse {
   background-color: #fff;
@@ -26,22 +31,44 @@ a:hover, a:focus {
   margin-top: 20px;
 }
 .navbar-inverse .navbar-nav>li>a {
-  color: #006687;
+  color: #364044;
   font-size: 17px;
-  margin-top: 24px;
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 17px;
 }
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-nav>li>a:focus {
   background-color: #49B2D4;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+  background-color: #49B2D4;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: #006687;
 }
 .navbar-inverse .navbar-nav>.dropdown>a .caret {
   border-top-color: #006687;
   border-bottom-color: #006687;
 }
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.navbar-inverse .navbar-nav>.dropdown>a:focus .caret {
+  border-top-color: #49B2D4;
+  border-bottom-color: #49B2D4;
+}
+.front li.menu-218{
+  display: none;
+}
 #block-system-main-menu i,
 .navbar-nav i,
 .toggle{
   font-style: normal;
+}
+#top-row{
+  background: rgba(212, 215, 200, 0.42) none repeat scroll 0% 0%;
 }
 .front .menu-path-front{
   display: none;
@@ -64,10 +91,13 @@ a:hover, a:focus {
 }
 .navbar-inverse .navbar-brand{
   color: #333;
-  margin: 33px 0 0 0;
+  margin: 20px 0 0 0;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 29px;
   font-family: Roboto, sans-serif;
+  padding-bottom: 6px;
+  float: none;
+  display: block;
 }
 .navbar-inverse .navbar-brand:hover, 
 .navbar-inverse .navbar-brand:focus {
@@ -103,7 +133,6 @@ a:hover, a:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
 .chosen-container-multi .chosen-choices {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -135,39 +164,107 @@ a:hover, a:focus {
 #edit-title-wrapper label{
   width: 100%;
 }
+.breadcrumb{
+  font-size: 13px;
+  border: none;
+  background: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
 
 /* home page */
 .front .main-container,
 .front .main-container .container-fluid,
 .front .main-container .row,
 .front .main-container .col-sm-12{
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+}
+.front #block-system-main .pane-map-chicago-1{
+  background-color: #73B5E5;
 }
 
-/* home page search panel */
+
+/* home page search panels */
+.front #featured-wrapper{
+  width: 98%;
+  margin: 0 auto;
+}
+.front #search_tabs{
+  width: 560px;
+  margin: 18px auto 12px;
+  position: absolute;
+  z-index: 995;
+  left: 0;
+  right: 0;
+  opacity: .98;
+}
+.front .nav-tabs{
+  margin-bottom: 0;
+  background: #eee;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.nav-tabs>li {
+  margin-top: 4px;
+  margin-left: 6px;
+}
+.front .nav-tabs > li > a{
+  background: transparent;
+  padding: 7px 12px 4px;
+  color: #444;
+  font-size: 15px;
+}
+.front .nav-tabs > li.active > a, 
+.front .nav-tabs > li.active > a:hover, 
+.front .nav-tabs > li.active > a:focus
+.front .nav > li > a:hover, 
+.front .nav > li > a:focus{
+  background-color: #fff;
+  outline: none;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.front .tab-pane{
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  height: 98px;
+  background: #fff;
+}
 #block-views-exp-geosearchaddy-page{
-  width: 505px;
+  width: 95.25%;
+  min-width: 515px;
   z-index: 900;
-  padding: 10px 12px 0px 12px;
+  padding: 10px 9px 0px 12px;
   position: relative;
-  margin-left: 14%;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  float: left;
-  /* background: #2A323A;
-  opacity: .95;
-  color:#eee;
-  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
-  box-shadow: 0 0 7px rgba(0,0,0,0.3); */
+}
+#block-views-exp-pointsearch-page {
+  width: 100%;
+  z-index: 900;
+  padding: 10px 9px 0px 12px;
+  position: relative;
+}
+#block-views-neighborhood-lister-block {
+  width: 96%;
+  z-index: 900;
+  padding: 10px 11px 0px 12px;
+  position: relative;
 }
 #block-views-exp-geosearchaddy-page h2.block-title,
-#block-views-blog-and-articles-block h2.block-title,
-#block-views-term-browser-block-1 h2.block-title{
+#block-views-exp-pointsearch-page h2.block-title,
+#block-views-neighborhood-lister-block h2.block-title{
   font-size: 17px;
   margin: 0;
+  display: none;
+}
+.geofield-proximity-field-wrapper .form-item, 
+.geofield-proximity-field-wrapper .geofield-proximity-origin-from {
+  margin-right: 11px;
 }
 .form-item-field-geofield-distance-distance{
   position: absolute;
@@ -196,51 +293,117 @@ a:hover, a:focus {
   width: 70px;
   padding-top: 0 !important;
 }
-.form-item-field-geofield-distance-origin{
+.form-item-field-geofield-distance-origin {
   position: absolute;
   float: left;
-  width: 225px;
+  width: 48%;
+  display: block;
+  height: 35px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.428571429;
+  color: #6f6f6f;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-item-field-geofield-distance-origin:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
 }
 #edit-field-geofield-distance-origin{
-  border-right: none;
+  border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  max-width: 73%;
+  background: transparent;
+    height: 29px;
+  padding: 7px 7px 0px;
 }
 #edit-field-geofield-distance-origin:focus{
-  border-color: #ccc;
-  border-right: none;
+  border: none;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .form-item-field-geofield-distance-origin .input-group-addon{
-  background: #fff;
+  background: transparent;
   padding: 9px 14px 7px 1px;
+  position: absolute;
+  border: none;
+  top: 3px;
+  right: 57px;
 }
-#views-exposed-form-geosearchaddy-page .description{
+#views-exposed-form-geosearchaddy-page .description,
+#block-views-exp-pointsearch-page #edit-keys-wrapper .description {
   margin-top: 17px;
   font-size: 13px;
+  color: #575757;
+  position: absolute;
 }
-#views-exposed-form-geosearchaddy-page .views-exposed-widget.views-submit-button{
+#block-views-exp-pointsearch-page #edit-keys-wrapper .description {
+  margin-top: 10px;
+}
+#block-views-exp-pointsearch-page #edit-keys-wrapper{
+  clear: right;
+  padding-right: 0;
+  width: 79%;
+}
+#views-exposed-form-geosearchaddy-page .views-exposed-widget.views-submit-button,
+#block-views-exp-pointsearch-page .views-exposed-widget.views-submit-button{
   float: right;
   margin-top: 9px;
   padding: 0;
 }
-#edit-submit-geosearchaddy{
+#block-views-exp-pointsearch-page .views-exposed-widget.views-submit-button{
+  float: left;
+  margin-left: 7px;
+}
+#edit-submit-geosearchaddy,
+#edit-submit-pointsearch,
+#block-views-neighborhood-lister-block .ctools-jump-menu-button{
   padding: 5px 14px;
   margin-top: 0;
+  float: left;
+}
+#edit-submit-geosearchaddy{
+  margin-right: 1px;
   float: right;
 }
+
 #edit-field-geofield-distance-wrapper label{
   display: none;
+}
+#block-views-neighborhood-lister-block .view-id-neighborhood_lister{
+  margin-top: 7px;
+}
+#block-views-neighborhood-lister-block .ctools-jump-menu-select{
+  width: 82.5%;
+  clear: right;
+  float: left;
+  margin-top: 1px;
+}
+#block-views-neighborhood-lister-block .ctools-jump-menu-button{
+  color: #fff;
+  background-color: #008cba;
+  border-color: #0079a1;
+  margin-top: 2px;
+  margin-left: 7px;
+  width: 78px;
 }
 
 /*Keyword search form */
 #block-search-form{
   max-width: 325px;
-  float: left;
-  margin-left: 2.5%;
-  padding: 11px 15px;
+  padding: 11px 0;
   position: relative;
   z-index: 1000;
 }
@@ -249,64 +412,17 @@ a:hover, a:focus {
   margin: 0 0 6px;
 }
 
-/* home page news panel */
-#block-views-blog-and-articles-block{
-  position: absolute;
-  z-index: 901;
-  background: #f5f5f5;
-  opacity: 0.96;
-  width: 425px;
-  top: 167px;
-  left: 16%;
-  padding: 20px;
-  margin-left: 595px;
-  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
-  box-shadow: 0 0 7px rgba(0,0,0,0.3);
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+
+/* home page pop-ups */
+.olPopup a,
+.olPopup a:visited{
+  color: #B8D1DA !important;
+}
+.olPopup a:hover,
+.olPopup a:active{
+  color: #6BD7FC !important;
 }
 
-/* home page browse panel */
-#block-views-term-browser-block-1{
-  position: absolute;
-  z-index: 900;
-  opacity: .95;
-  padding: 0;
-  left: 65%;
-}
-#block-views-term-browser-block-1 h2.block-title{
-  cursor: pointer;
-  width: 200px;
-  padding: 11px 30px;
-}
-#block-views-term-browser-block-1 h2.block-title .toggle{
-float: right;
-  }
-#block-views-term-browser-block-1 .view-header{
-  display: none;
-}
-#block-views-term-browser-block-1 h3 {
-  font-size: 18px;
-}
-#block-views-term-browser-block-1 .view-id-term_browser{
-  width: 575px;
-  display:none;
-  padding: 0 20px 20px;
-  background: #fff;
-  float: left;
-}
-#block-views-term-browser-block-1 .attachment .view-id-term_browser{
-  float: left;
-  width: 45%;
-  margin-right: 30px;
-}
-#block-views-term-browser-block-1 .attachment .view-display-id-attachment_2,
-#block-views-term-browser-block-1 .attachment .view-display-id-attachment_4{
-  margin-right: 0;
-}
-.browse-holder-surpress{
-  display: none;
-}
 
 /* Articles page */
 .view-id-articles.view-display-id-page .media{
@@ -325,10 +441,21 @@ float: right;
 
 /* footer */
 #footer_wrapper{
-  background: #f2f2f2;
+  background: #EFF0F4;
   margin-top: 50px;
   padding: 30px 0;
   position: relative;
+}
+.front #footer_wrapper{
+  margin-top: 0;
+}
+.region-footer-left,
+.region-footer-middle,
+.region-footer-right{
+  margin-bottom: 30px;
+}
+#footer_wrapper .block-title{
+  font-size: 24px;
 }
 
 /* browse */
@@ -350,55 +477,44 @@ float: right;
   max-width: 500px;
 }
 
+
+/* alerts */
+.alert-warning .close{
+  color: #fff !important;
+  opacity: 1;
+  text-decoration: none !important;
+}
+
+
+/*pagers */
+.pagination>li>a, .pagination>li>a, .pagination>li:first-child>a, .pagination>li:last-child>a, .pagination>li>span, .pagination>li>span, .pagination>li:first-child>span, .pagination>li:last-child>span{
+  color: #555;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+  color: #fff;
+}
+
 /* responsive */
 
-@media (max-width: 1350px) {
-  #block-views-exp-geosearchaddy-page{
-    width: 575px;
-    left: 9%;
-  }
-  #block-views-blog-and-articles-block{
-    width: 425px;
-    left: 11%;
-    margin-left: 595px;
-  }
-  #block-views-term-browser-block-1{
-    width: 575px;
-    left: 9%;
+@media (max-width: 1490px) {
+ .featured_left{
+   margin-left: 3%;
+ }
+}
+
+@media (max-width: 1190px) {
+  .front #search_tabs{
+    left: 85px;
+    right: auto;
   }
 }
 
-@media (max-width: 1250px) {
-  #block-views-exp-geosearchaddy-page{
-    width: 575px;
-    left: 6%;
-  }
-  #block-views-blog-and-articles-block{
-    width: 425px;
-    margin-left: 595px;
-  }
-  #block-views-term-browser-block-1{
-    width: 575px;
-    left: 6%;
-  }
-}
-
-@media (max-width: 1150px) {
+@media (max-width: 995px) {
   #navbar .container{
     width: 98%;
   }
-  #block-views-exp-geosearchaddy-page{
-    width: 545px;
-    left: 3%;
-  }
-  #block-views-blog-and-articles-block{
-    width: 34.5%;
-    left: 5%;
-    margin-left: 555px;
-  }
   #block-views-term-browser-block-1{
-    width: 545px;
-    left: 3%;
+    position: relative;
   }
 }
 
@@ -406,54 +522,25 @@ float: right;
   body,html {
     overflow-x: hidden
   }
+  #navbar .lead {
+    font-size: 15px;
+  }
   .navbar-inverse .navbar-brand{
-    font-size: 27px;
+    font-size: 24px;
   }
-  #edit-field-geofield-distance-origin {
-    width: 82%;
-  }
-  #block-views-exp-geosearchaddy-page{
-    width: 520px;
-    position: absolute;
-    top: 47px;
-    padding: 20px;
-    left: 60px;
-  }
-  #block-views-blog-and-articles-block{
-    width: 520px;
-    top: 280px;
-    left: 60px;
-    padding: 20px;
-    margin-left: 0;
-  }
-  /* home page browse terms panel */
-  #block-views-term-browser-block-1 .view-header{
-    display: block !important;
-    position: absolute;
-    top: 4px;
-    left: -37px;
-    font-size: 28px;
-    padding: 0 15px 0 5px;
-    background: #F6FFFF;
-    opacity: .95;
-    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
-    box-shadow: 0 0 7px rgba(0,0,0,0.3);
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  #block-views-term-browser-block-1{
-    width: 300px;
-    position: absolute;
-    top: auto;
-    opacity: .95;
-    padding: 10px 0 10px 60px;
-    left: auto;
-    z-index: 3000;
-    right: -305px;
+  .olControlLayerSwitcher{
+    top: 325px !important;
+    right: auto !important;
+    left: 32px !important;
+    width: 0px;
+    height: 0px;
   }
 }
+
 @media (max-width: 870px) {
+  #navbar .container {
+    width: 100%;
+  }
   .navbar-inverse .navbar-brand{
     margin-top: 10px;
   }
@@ -463,6 +550,8 @@ float: right;
     margin-top: 10px;
     padding-top: 20px;
   }
+}
+
 @media (max-width: 768px) {
   .navbar-inverse .navbar-toggle{
     background-color: #008cba;
@@ -517,7 +606,10 @@ float: right;
   #navbar .menu a span{
     display: inline-block;
     padding: 8px 0 0 13px;
-    font-size: 18px;
+    font-size: 16px;
+  }
+  #navbar .menu a span.caret{
+    padding: 0;
   }
   .navbar-inverse .navbar-collapse{
     border: none;
@@ -525,7 +617,7 @@ float: right;
   .main-container{
     padding: 0 10px;
   }
-  .page-header {
+  .page-header{
     margin: 25px 0 21px;
   }
   h1.page-header {
@@ -536,66 +628,28 @@ float: right;
     max-width: 100%;
     height: auto;
   }
-  #block-views-blog-and-articles-block{
-    width: 260px;
-    top: 360px;
-  }
-  #block-views-term-browser-block-1 .attachment .view-id-term_browser {
-    float: none;
-    width: 90%; 
-  }
   /* home page search form */
-  #OpenLayers_Control_LayerSwitcher_56{
-    display: none;
-  }
-  .form-item-field-geofield-distance-origin{
-    top:74px;
+  .nav-tabs>li {
+    margin-top: 4px;
+    margin-left: 4px;
   }
   #block-views-exp-geosearchaddy-page {
-    width: 78%;
-    position: absolute;
-    top: 47px;
-    padding: 20px;
-    left: 60px;
+    width: 95%;
+    min-width: 400px;
   }
-  #edit-field-geofield-distance-origin {
-    width: 63%;
+  .form-item-field-geofield-distance-origin{
+    width: 47%
   }
-  #edit-field-geofield-distance-wrapper{
-    padding: 0;
+  #edit-submit-geosearchaddy,
+  #edit-submit-pointsearch{
+    padding: 6px 8px;
+    font-size: 14px;
   }
-  .form-item-field-geofield-distance-distance::before {
-    position: relative;
-    right: 0;
-    width: 55px;
-    margin-top: 0;
-    white-space: normal;
-    float: left;
+  .geofield-proximity-field-wrapper .form-item{
+    margin-right: -5px;
   }
-  #edit-field-geofield-distance{
-    margin-top: 50px;
+  #block-views-neighborhood-lister-block .ctools-jump-menu-button{
+   width: 55px;
+  font-size: 14px;
   }
-  .form-item-field-geofield-distance-distance{
-    position: relative;
-    right: 0;
-  }
-  .form-item-field-geofield-distance-unit{
-    position: relative;
-    right: 0;
-  }
-  .geofield-proximity-origin-from{
-    display: none;
-  }
-  #views-exposed-form-geosearchaddy-page .description {
-  margin-top: 12px;
-  margin-right: 0;
-  }
-  #views-exposed-form-geosearchaddy-page .views-exposed-widget.views-submit-button{
-    float: left;
-    margin-top: 15px;
-  }
-  #edit-submit-geosearchaddy{
-    float: left;
-  }
-
 }

@@ -6,7 +6,7 @@ jQuery(document).ready(function()
     jQuery("a.menu-218").wrapInner("<span></span>").prepend("<i class='entypo-home'></i> ");
     jQuery("a.menu-776").wrapInner("<span></span>").prepend("<i class='entypo-info-circled' data-text='info-circled'></i> ");
     jQuery("a.menu-616").wrapInner("<span></span>").prepend(" <i class='entypo-doc-text' data-text='doc-text'></i> ");
-    jQuery("a.menu-592").wrapInner("<span></span>").prepend(" <i class='entypo-flashlight' data-text='flashlight'></i> ");
+    jQuery("a.menu-962").wrapInner("<span></span>").prepend(" <i class='entypo-flashlight' data-text='flashlight'></i> ");
     jQuery("a.menu-777").wrapInner("<span></span>").prepend(" <i class='entypo-book' data-text='book'></i> ");
      jQuery("#block-views-term-browser-block-1 .block-title").wrapInner("<span></span>").append(" <i class='toggle entypo-down-open'></i>");
      jQuery("#block-views-term-browser-block-1 .block-title").click(function(){

@@ -245,16 +245,75 @@ a:hover, a:focus {
   margin: 0 0 6px;
 }
 
-/* map popups */
-#popup_GroupDiv a{
-  color: #B3E5F5;
+/* home page news panel */
+#block-views-blog-and-articles-block{
+  position: absolute;
+  z-index: 901;
+  background: #f5f5f5;
+  opacity: 0.96;
+  width: 425px;
+  top: 167px;
+  left: 16%;
+  padding: 20px;
+  margin-left: 595px;
+  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
-#popup_GroupDiv a:hover, 
-#popup_GroupDiv a:focus {
-  color: #87D2EC;
+
+/* home page browse panel */
+#block-views-term-browser-block-1{
+  position: absolute;
+  top: 23px;
+  z-index: 900;
+  background: #fff;
+  opacity: .95;
+  padding: 0;
+  left: 65%;
+  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#block-views-term-browser-block-1 h2.block-title{
+  cursor: pointer;
+  width: 200px;
+  padding: 22px 30px 20px;
+}
+#block-views-term-browser-block-1 h2.block-title .toggle{
+float: right;
+}
+#block-views-term-browser-block-1 .view-header{
+  display: none;
+}
+#block-views-term-browser-block-1 h3 {
+  font-size: 18px;
+}
+#block-views-term-browser-block-1 .view-id-term_browser{
+  width: 575px;
+  display:none;
+  padding: 0 20px 20px;
+}
+#block-views-term-browser-block-1 .attachment .view-id-term_browser{
+  float: left;
+  width: 45%;
+  margin-right: 30px;
+}
+#block-views-term-browser-block-1 .attachment .view-display-id-attachment_2,
+#block-views-term-browser-block-1 .attachment .view-display-id-attachment_4{
+  margin-right: 0;
+}
+.browse-holder-surpress{
+  display: none;
 }
 
 /* Articles page */
+.view-id-articles.view-display-id-page .views-responsive-grid-horizontal>div:before,  
+.view-id-articles.view-display-id-page .views-responsive-grid-horizontal>div:after {
+  display: table;
+  content: " ";
+}
 .view-id-articles.view-display-id-page .media{
   margin-bottom: 15px;
 }
@@ -262,7 +321,6 @@ a:hover, a:focus {
   padding-left: 5px;
   padding-top: 5px;
 }
-
 /* page template */
 .main-container{
   min-height: 550px;

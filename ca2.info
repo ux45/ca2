@@ -14,6 +14,9 @@ regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[featured]       = 'Featured'
+regions[featured_left]  = 'Featured left'
+regions[featured_middle]= 'Featured middle'
+regions[featured_right] = 'Featured right'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
@@ -30,7 +33,6 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/ca2.css
 
 
 ; For information on choosing the desired method, please read the Drupal

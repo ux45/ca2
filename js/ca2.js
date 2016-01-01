@@ -18,5 +18,9 @@ jQuery(document).ready(function()
       jQuery('#edit-field-geofield-distance-origin').val(addressQuery + ", Chicago IL");
       jQuery('.form-item-field-geofield-distance-origin .input-group-addon').empty();
     });
+    jQuery('.place-related-images .field-item img').parent('a').addClass('thumbnail');
+    jQuery('.views-field-field-image img').parent('a').addClass('thumbnail');
+    jQuery('.comment_forbidden>span').addClass('btn btn-default btn-sm');
+    jQuery('#navbar #block-system-user-menu ul.nav').addClass('nav-pills');
   } 
 ); 
